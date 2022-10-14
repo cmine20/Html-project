@@ -1,2 +1,2 @@
 # Html-project
-This is just my project about html ^_^
+This is just my school project about html ^_^
