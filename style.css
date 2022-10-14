@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial';
+    background-image: url("html-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 630px;
+    height: 300px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: blue;
+}
+
+.main {
+    margin-left: 250px;
+    /* Same as the width of the sidenav */
+    font-size: 18px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.main strong {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.example {
+    padding: 1rem 3rem;
+}
+
+.example:target {
+    background: lightyellow;
+}
+
+#example21 .htmlform {
+    height: 1080px;
+}
