@@ -63,13 +63,69 @@ img {
 }
 
 .example {
-    padding: 1rem 3rem;
+    padding: 50px 200px;
+    border-radius: 5%;
+
+
 }
 
 .example:target {
     background: lightyellow;
+
 }
 
 #example21 .htmlform {
     height: 1080px;
+}
+
+#example12 .example12 {
+    height: 500px;
+}
+
+#example1,
+#example2,
+#example3,
+#example4,
+#example5,
+#example6,
+#example7,
+#example8,
+#example9,
+#example10,
+#example11,
+#example12,
+#example13,
+#example14,
+#example15,
+#example16,
+#example17,
+#example18,
+#example19,
+#example20,
+#example21 {
+    display: none;
+}
+
+#example1:target,
+#example2:target,
+#example3:target,
+#example4:target,
+#example5:target,
+#example6:target,
+#example7:target,
+#example8:target,
+#example9:target,
+#example10:target,
+#example11:target,
+#example12:target,
+#example13:target,
+#example14:target,
+#example15:target,
+#example16:target,
+#example17:target,
+#example18:target,
+#example19:target,
+#example20:target,
+#example21:target {
+    display: block;
 }
