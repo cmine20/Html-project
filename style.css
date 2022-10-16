@@ -69,7 +69,7 @@ img {
 margin-left: 0%;}
 }
 @media screen and (max-width: 480px) {
-.example img{}
+.example img{ max-width: 480px;}
 }
 .example {
     padding: 50px 200px;
