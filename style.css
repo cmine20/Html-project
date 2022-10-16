@@ -2,7 +2,6 @@ body {
     font-family: 'Arial';
     background-image: url("html-bg.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100%;
 Width: 100%;
     margin: 0px;
@@ -77,7 +76,7 @@ margin-left: 0%;}
 
 
 }
-.example img{ max-width:100%;}
+.example img{ max-width:480px;}
 .example:target {
     background: lightyellow;
 
