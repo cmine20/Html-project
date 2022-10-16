@@ -69,14 +69,14 @@ img {
 margin-left: 0%;}
 }
 .example {
-    padding: 50px 200px;
+    padding: 20px 20px;
     border-radius: 5%;
     height: 100%;
     width: 100%;
 
 
 }
-.example img{ max-width:480px;}
+.example img{ max-width:720px;}
 .example:target {
     background: lightyellow;
 
