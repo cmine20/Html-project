@@ -11,45 +11,52 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     color: white;
+    padding-left: 10px;
 }
 
 h2 {
     padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: 28px;
 }
 
 
 .sidebar {
     height: 100%;
-    width: 250px;
+    width: 150px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: grey;
     padding-top: 20px;
+    padding-right: 0px;
 }
 
 .sidebar a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 0px 6px 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     display: block;
 }
 
-
+.sidebar a:hover {
+    color: blue;
+}
 
 .main {
-    margin-left: 260px;
+    margin-left: 180px;
     margin-top: 50px;
     margin-bottom: 50px;
     /* Same as the width of the sidenav */
     font-size: 16px;
     /* Increased text to enable scrolling */
     padding: 0px 10px;
-    width: 84%;
+    width: 88%;
 
 }
 
@@ -79,7 +86,7 @@ h2 {
 
 
 img {
-    width: 80%;
+    width: 50%;
     height: 500px;
     padding: 1%;
 }
