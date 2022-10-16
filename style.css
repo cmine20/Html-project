@@ -1,8 +1,13 @@
+* {
+    margin: 0px;
+}
+
 body {
     font-family: 'Arial';
     background-image: url("html-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: -5px;
 }
 
 h1 {
@@ -10,10 +15,7 @@ h1 {
     color: white;
 }
 
-img {
-    width: 630px;
-    height: 300px;
-}
+
 
 .sidebar {
     height: 100%;
@@ -41,18 +43,29 @@ img {
 
 .main {
     margin-left: 250px;
+    margin-right: 0px;
+    margin-top: 50px;
     /* Same as the width of the sidenav */
-    font-size: 18px;
+    font-size: 14px;
     /* Increased text to enable scrolling */
     padding: 0px 10px;
+    width: 100%;
+
 }
 
+.main h1,
 .main strong {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
+
 }
 
-@media screen and (max-height: 450px) {
+.main p {
+    width: 100%;
+    font-size: 20px;
+}
+
+@media screen and (max-height: 720px) {
     .sidebar {
         padding-top: 15px;
     }
@@ -60,19 +73,29 @@ img {
     .sidebar a {
         font-size: 18px;
     }
+
+
+}
+
+
+img {
+    width: 80%;
+    height: 500px;
+    padding: 10%;
 }
 
 .example {
-    padding: 50px 200px;
+    padding: 50px 10px;
     border-radius: 5%;
-
-
+    margin: 0px;
 }
+
 
 .example:target {
     background: lightyellow;
 
 }
+
 
 #example21 .htmlform {
     height: 1080px;
