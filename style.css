@@ -60,20 +60,16 @@ height: 720px;
 
     .sidebar a {
         font-size: 18px;
-    }
-    .example p {
- font-size: 14px;
-}
-.example {
-margin-left: 0%;}
-}
+    }}
 .example {
     padding: 20px 20px;
     border-radius: 5%;
     height: 100%;
     width: 100%;
+margin-left: 0%;
 
-
+}
+.example {
 }
 .example:target {
     background: lightyellow;
