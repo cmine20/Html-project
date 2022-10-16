@@ -15,6 +15,9 @@ h1 {
     color: white;
 }
 
+h2 {
+    padding-top: 40px;
+}
 
 
 .sidebar {
@@ -25,7 +28,6 @@ h1 {
     top: 0;
     left: 0;
     background-color: grey;
-    overflow-x: hidden;
     padding-top: 20px;
 }
 
@@ -42,14 +44,14 @@ h1 {
 }
 
 .main {
-    margin-left: 250px;
-    margin-right: 0px;
+    margin-left: 260px;
     margin-top: 50px;
+    margin-bottom: 50px;
     /* Same as the width of the sidenav */
-    font-size: 14px;
+    font-size: 16px;
     /* Increased text to enable scrolling */
     padding: 0px 10px;
-    width: 100%;
+    width: 84%;
 
 }
 
@@ -79,6 +81,12 @@ h1 {
 
 
 img {
+    width: 80%;
+    height: 500px;
+    padding: 10%;
+}
+
+iframe {
     width: 80%;
     height: 500px;
     padding: 10%;
