@@ -2,9 +2,7 @@ body {
     font-family: 'Arial';
     background-image: url("html-bg.jpg");
     background-repeat: no-repeat;
-    height: 100%;
-Width: 100%;
-    margin: 0px;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -13,8 +11,9 @@ h1 {
 }
 
 img {
-width: 100%;
-height: 720px;
+    width: 630px;
+    height: 300px;
+}
 
 .sidebar {
     height: 100%;
@@ -53,22 +52,23 @@ height: 720px;
     font-weight: bolder;
 }
 
-@media screen and (max-height: 720px) {
+@media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
     }
 
     .sidebar a {
         font-size: 18px;
-    }}
+    }
+}
+
 .example {
-    padding: 20px 20px;
+    padding: 50px 200px;
     border-radius: 5%;
-    height: 100%;
-    width: 100%;
-margin-left: 0%;
+
 
 }
+
 .example:target {
     background: lightyellow;
 
