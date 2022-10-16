@@ -3,6 +3,7 @@ body {
     background-image: url("html-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100%;
 }
 
 h1 {
