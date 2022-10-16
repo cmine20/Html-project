@@ -65,10 +65,12 @@ img {
     .example p {
  font-size: 14px;
 }
-. example {
+.example {
 margin-left: 0%;}
 }
-
+@media screen and (max-width: 480px) {
+.example img{}
+}
 .example {
     padding: 50px 200px;
     border-radius: 5%;
