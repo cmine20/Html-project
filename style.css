@@ -69,8 +69,6 @@ height: 720px;
 margin-left: 0%;
 
 }
-.example h4{ width: 100%;
-}
 .example:target {
     background: lightyellow;
 
