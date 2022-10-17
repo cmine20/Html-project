@@ -21,6 +21,7 @@ h2 {
     padding-bottom: 20px;
     font-weight: bolder;
     font-size: 28px;
+
 }
 
 
@@ -65,6 +66,7 @@ h2 {
     font-size: 30px;
     font-weight: bolder;
 
+
 }
 
 .main p {
@@ -89,12 +91,16 @@ img {
     width: 50%;
     height: 500px;
     padding: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 iframe {
     width: 80%;
     height: 500px;
     padding: 1%;
+
 }
 
 .example {
