@@ -100,6 +100,9 @@ iframe {
     width: 80%;
     height: 500px;
     padding: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
