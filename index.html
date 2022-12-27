@@ -1,653 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Exercise for HTML</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="portfolio.png" />
+    <script defer src="animation.js"></script>
   </head>
   <body>
-    <!-- Left Side Menu -->
-    <div class="dropdown">
-      <button class="dropbtn"><h1>Exercise in HTML</h1></button>
-      <div class="sidebar">
-        <a href="#example1">Exercise No.1 </a>
-        <a href="#example2">Exercise No.2 </a>
-        <a href="#example3">Exercise No.3 </a>
-        <a href="#example4">Exercise No.4 </a>
-        <a href="#example5">Exercise No.5 </a>
-        <a href="#example6">Exercise No.6 </a>
-        <a href="#example7">Exercise No.7 </a>
-        <a href="#example8">Exercise No.8 </a>
-        <a href="#example9">Exercise No.9 </a>
-        <a href="#example10">Exercise No.10 </a>
-        <a href="#example11">Exercise No.11 </a>
-        <a href="#example12">Exercise No.12 </a>
-        <a href="#example13">Exercise No.13 </a>
-        <a href="#example14">Exercise No.14 </a>
-        <a href="#example15">Exercise No.15 </a>
-        <a href="#example16">Exercise No.16 </a>
-        <a href="#example17">Exercise No.17 </a>
-        <a href="#example18">Exercise No.18 </a>
-        <a href="#example19">Exercise No.19 </a>
-        <a href="#example20">Exercise No.20 </a>
-        <a href="#example21">Exercise No.21 </a>
-      </div>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="navEffect">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
+      </svg>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn"><h1>Exercise in CSS</h1></button>
-      <div class="sidebar">
-        <a href="#Presentation">Video Presentation of Group 9 </a>
-        <br />
-        <a href="#CSSexample1">Exercise No.1 </a>
-        <a href="#CSSexample2">Exercise No.2 </a>
-        <a href="#CSSexample3">Exercise No.3 </a>
-        <a href="#CSSexample4">Exercise No.4 </a>
-        <a href="#CSSexample5">Exercise No.5 </a>
-        <a href="#CSSexample6">Exercise No.6 </a>
-        <a href="#CSSexample7">Exercise No.7 </a>
-        <a href="#CSSexample8">Exercise No.8 </a>
-        <a href="#CSSexample9">Exercise No.9 </a>
-        <a href="#CSSexample10">Exercise No.10 </a>
-        <a href="#CSSexample11">Exercise No.11 </a>
-        <a href="#CSSexample12">Exercise No.12 </a>
-        <a href="#CSSexample13">Exercise No.13 </a>
-        <a href="#CSSexample14">Exercise No.14 </a>
-        <a href="#CSSexample15">Exercise No.15 </a>
-        <a href="#CSSexample16">Exercise No.16 </a>
-        <a href="#CSSexample17">Exercise No.17 </a>
-        <a href="#CSSexample18">Exercise No.18 </a>
-        <a href="#CSSexample19">Exercise No.19 </a>
-        <a href="#CSSexample20">Exercise No.20 </a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn"><h1>Source Code .</h1></button>
-      <div class="sidebar">
-        <a
-          href="https://drive.google.com/drive/folders/1vOVX5z7ajR-ntK-o-cfYGhsVroTDGti5?fbclid=IwAR0DTIrmqMleuFL5x7dvU9-dO7Ewn-Fhg3umKVZEcR0NqPFbtSmk2HtZUYQ"
-          >Installer &<br />
-          Code example</a
-        >
-        <a href="https://github.com/cmine20/Html-project"
-          >Github Source Code of this Website.</a
-        >
-      </div>
-    </div>
-    <!-- Right Side Content-->
-    <!-- HTML EXERCISE-->
-    <div class="main">
-      <div class="example" id="example1">
-        <h2>1. title Tag</h2>
+    <main>
+      <section id="intro">
+        <div class="intro-dashboard">
+          <img
+            src="profile.jpg"
+            alt="profile picture"
+            class="profile-picture"
+          />
+          <div class="intro-text">
+            <h1>Hi, my name is <br />Nilo Jr. Olang</h1>
+            <br />
+            <p>
+              I am a Computer Science student in Surigao del Norte State
+              University.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="hidden">
+        <h2>About Me</h2>
         <p>
-          This tag sets the title of your page. All you need to do is put your
-          title in the tag and close it, like this (we've included the header
-          tags, as well, to show the context).
+          I have always been passionate about technology and problem-solving,
+          which is what drew me to the field of computer science. In my studies,
+          I have focused on topics such as data structures, algorithms,
+          programming languages, and software engineering.<br /><br />
+          Outside of my academic pursuits, I enjoy staying up-to-date on the
+          latest developments in the tech industry and tinkering with new
+          technologies in my free time.<br /><br />
+          I am also an avid learner and am always looking for new ways to expand
+          my knowledge and skills. <br /><br />In the future, I hope to use my
+          skills and expertise to make a positive impact in the tech industry,
+          whether that be through developing innovative software solutions or
+          helping others to learn and grow in their own careers. <br /><br />I
+          am excited to see where my studies and interests will take me, and I
+          am confident that my degree in computer science will open up a world
+          of opportunities for me.
         </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example1.jpg" alt="Example 1" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example1p.jpg" alt="Example 1p" />
-      </div>
-      <div class="example" id="example2">
-        <h2>2. heading Tags</h2>
-        <p>
-          The &#60;h1> tag defines a level-one header on your page. This will
-          usually be the title, and there will ideally only be one on each page.
-          &#60;h2> defines level-two headers such as sub headers or title,
-          &#60;h3> level-three sub-headers, and so on, down to &#60;h6>.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example2.jpg" alt="Example 2" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example2p.jpg" alt="Example 2p" />
-      </div>
-      <div class="example" id="example3">
-        <h2>3. paragraph or p Tag</h2>
-        <p>
-          The paragraph tag starts a new paragraph. This usually inserts two
-          line breaks. Look, for example, at the break between the previous line
-          and this one. That's what a &#60;p> tag will do.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example3.jpg" alt="Example 3" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example3p.jpg" alt="Example 3p" />
-      </div>
-      <div class="example" id="example4">
-        <h2>4. style attribute</h2>
-        <p>
-          You can also use CSS styles in your paragraph tags, like this one
-          which changes the text size, color.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example4.jpg" alt="Example 4" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example4p.jpg" alt="Example 4p" />
-      </div>
-      <div class="example" id="example5">
-        <h2>5. break or br Tag</h2>
-        <p>
-          The line break tag inserts a single line break. This draws a
-          horizontal line on your page and is good for separating sections of
-          text.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example5.jpg" alt="Example 5" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example5p.jpg" alt="Example 5p" />
-      </div>
-      <div class="example" id="example6">
-        <h2>6. strong Tag</h2>
-        <p>
-          This tag defines important text. In general, that means it will be
-          bold. However, it's possible to use CSS to make &#60;strong> text
-          display differently. If you're familiar with the &#60;b> tag for
-          bolding text, you can still use it. There's no guarantee it will
-          continue to work in future versions of HTML, but for now, it works.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example6.jpg" alt="Example 6" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example6p.jpg" alt="Example 6p" />
-      </div>
-      <div class="example" id="example7">
-        <h2>7. emphasized or em Tag</h2>
-        <p>
-          Like &#60;b> and &#60;strong>, &#60;em> and &#60;i> are related. The
-          &#60;em> tag identifies emphasized text, which generally means it will
-          get italicized. Again, there's the possibility that CSS will make
-          emphasized text display differently.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example7.jpg" alt="Example 7" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example7p.jpg" alt="Example 7p" />
-      </div>
-      <div class="example" id="example8">
-        <h2>8. anchor or a Tag</h2>
-        <p>
-          The &#60;a> or anchor, tag lets you create links. The "href" attribute
-          identifies the destination of the link. In many cases, this will be
-          another website. It could also be a file, like an image or a PDF.A
-          simple link looks like this:
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example8.jpg" alt="Example 8" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example8p.jpg" alt="Example 8p" />
-      </div>
-      <div class="example" id="example9">
-        <h2>9. image or img Tags</h2>
-        <p>
-          To embed an image in your page, you'll need to use the image tag.
-          You'll normally use it in conjunction with the "src" attribute. This
-          specifies the source of the image, like this:
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example9.jpg" alt="Example 9" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example9p.jpg" alt="Example 9p" />
-      </div>
-      <div class="example" id="example10">
-        <h2>10. order list or ol Tags</h2>
-        <p>
-          The ordered list tag lets you create an ordered list. In general, that
-          means you'll get a numbered list. Each item in the list needs a list
-          item tag (&#60;li>), so your list will look like this:
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example10.jpg" alt="Example 10" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example10p.jpg" alt="Example 10p" />
-      </div>
-      <div class="example" id="example11">
-        <h2>11. un-order list or ul Tags</h2>
-        <p>
-          The unordered list is much simpler than its ordered counterpart. It's
-          simply a bulleted list.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example11.jpg" alt="Example 11" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example11p.jpg" alt="Example 11p" />
-      </div>
-      <div class="example" id="example12">
-        <h2>12. table Tags</h2>
-        <p>
-          Several tags are needed to get a table to work.Each row of the table
-          is enclosed in a &#60;tr> tag. Each cell within each row is wrapped in
-          either &#60;th> tags for column headers, or &#60;td> tags for column
-          data. You need one of these for each column on each row.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example12.jpg" alt="Example 12" class="example12" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example12p.jpg" alt="Example 12p" />
-      </div>
-      <div class="example" id="example13">
-        <h2>13. comment Tags</h2>
-        <p>
-          Comments are not displayed by the browser, but they can help document
-          your HTML source code. With comments you can place notifications and
-          reminders in your HTML code.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example13.jpg" alt="Example 13" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example13p.jpg" alt="Example 13p" />
-      </div>
-      <div class="example" id="example14">
-        <h2>14. div Tags</h2>
-        <p>
-          The &#60;div class="example" id="example"> element is often used as a
-          container for other HTML elements. The &#60;div> element has no
-          required attributes, but style, class and id are common. When used
-          together with CSS, the &#60;div> element can be used to style blocks
-          of content:
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example14.jpg" alt="Example 14" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example14p.jpg" alt="Example 14p" />
-      </div>
-      <div class="example" id="example15">
-        <h2>15. HTML Favicon</h2>
-        <p>Use the HTML &#60;link> element to insert a favicon</p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example15.jpg" alt="Example 15" />
-        <p>
-          A favicon image is displayed to the left of the page title in the
-          browser tab, like this:
-        </p>
-        <img src="outputcode/example152.jpg" alt="Favicon" />
-      </div>
-      <div class="example" id="example16">
-        <h2>HTML FORM</h2>
-        An HTML form is used to collect user input. The user input is most often
-        sent to a server for processing.
-        <h2>16. Text Fields</h2>
-        <p>
-          The &#60;input type="text"> defines a single-line input field for text
-          input.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example16.jpg" alt="Example 16" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example16p.jpg" alt="Example 16p" />
-      </div>
-      <div class="example" id="example17">
-        <h2>17. Radio Buttons</h2>
-        <p>
-          The &#60;input type="radio"> defines a radio button. Radio buttons let
-          a user select ONE of a limited number of choices.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example17.jpg" alt="Example 17" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example17p.jpg" alt="Example 17p" />
-      </div>
-      <div class="example" id="example18">
-        <h2>18. Checkboxes</h2>
-        <p>
-          The &#60;input type="checkbox"> defines a checkbox. Checkboxes let a
-          user select ZERO or MORE options of a limited number of choices.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example18.jpg" alt="Example 18" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example18p.jpg" alt="Example 18p" />
-      </div>
-      <div class="example" id="example19">
-        <h2>19. Submit Button</h2>
-        <p>
-          The &#60;input type="submit"> defines a button for submitting the form
-          data to a form-handler. The form-handler is typically a file on the
-          server with a script for processing input data. The form-handler is
-          specified in the form's action attribute.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example19.jpg" alt="Example 19" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/example19p.jpg" alt="Example 19p" />
-      </div>
-      <div class="example" id="example20">
-        <h2>20. HTML Video</h2>
-        <p>HTML &#60;video> element is used to show a video on a web page.</p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/example20.jpg" alt="Example 20" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <iframe
-          width="1920"
-          height="1080"
-          src="https://www.youtube.com/embed/ok-plXXHlWw"
-          title="HTML in 100 Seconds"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="example" id="example21">
-        <h2>Exercise in HTML: Create a Registration Form</h2>
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="outputcode/form.jpg" />
-        <br /><strong>HTML CODE</strong><br />
-        <img src="inputcode/formexample.jpg" class="htmlform" />
-      </div>
-      <div class="example" id="Presentation">
-        <h2>Gourp 9 Presentation CSS</h2>
-        <p>Hello ma'am UNIFE CAGAS This is Group 9 Presentation.</p>
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/vVD-Rx4yGO4"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <!--CSS Exercise-->
-
-      <div class="example" id="CSSexample1">
-        <h2>1. Aligned & Text Color</h2>
-        <p>
-          In this example all &#60;p> elements will be center-aligned, with a
-          red text color:.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example01.jpg" alt="Example 1" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example01.jpg" alt="Example 1p" />
-      </div>
-      <div class="example" id="CSSexample2">
-        <h2>2. External CSS</h2>
-        <p>
-          With an external style sheet, you can change the look of an entire
-          website by changing just one file!<br />
-          Each HTML page must include a reference to the external style sheet
-          file inside the &#60;link> element, inside the head section.<br />
-          External styles are defined within the &#60;link> element, inside the
-          &#60;head> section of an HTML page:
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example02.jpg" alt="Example 2" />
-        <img src="css/input/example02css.jpg" alt="Example 2" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example02.jpg" alt="Example 2p" />
-      </div>
-      <div class="example" id="CSSexample3">
-        <h2>3. Internal CSS</h2>
-        <p>
-          An internal style sheet may be used if one single HTML page has a
-          unique style.<br />
-          The internal style is defined inside the &#60;style> element, inside
-          the head section.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example03.jpg" alt="Example 3" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example03.jpg" alt="Example 3" />
-      </div>
-      <div class="example" id="CSSexample4">
-        <h2>4. Inline CSS</h2>
-        <p>
-          An inline style may be used to apply a unique style for a single
-          element.<br />
-          To use inline styles, add the style attribute to the relevant element.
-          The style attribute can contain any CSS property.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example04.jpg" alt="Example 4" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example04.jpg" alt="Example 4" />
-      </div>
-      <div class="example" id="CSSexample5">
-        <h2>5. CSS Background Color</h2>
-        <p>You can set the background color for HTML elements.</p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example05.jpg" alt="Example 5" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example05.jpg" alt="Example 5" />
-      </div>
-      <div class="example" id="CSSexample6">
-        <h2>6. CSS Text Color</h2>
-        <p>You can set the color of text.</p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example06.jpg" alt="Example 6" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example06.jpg" alt="Example 6" />
-      </div>
-      <div class="example" id="CSSexample7">
-        <h2>7. CSS Border Color</h2>
-        <p>You can set the color of borders.</p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example07.jpg" alt="Example 7" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example07.jpg" alt="Example 7" />
-      </div>
-      <div class="example" id="CSSexample8">
-        <h2>8. CSS Color Values</h2>
-        <p>
-          In CSS, colors can also be specified using RGB values, HEX values, HSL
-          values, RGBA values, and HSLA values.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example08.jpg" alt="Example 8" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example08.jpg" alt="Example 8" />
-      </div>
-      <div class="example" id="CSSexample9">
-        <h2>9. CSS Background</h2>
-        <p>
-          The background-image property specifies an image to use as the
-          background of an element.<br />
-          By default, the image is repeated so it covers the entire element and
-          by default, the background-image property repeats an image both
-          horizontally and vertically. <br /><br />Note: When using a background
-          image, use an image that does not disturb the text. <br />The
-          background image can also be set for specific elements, like the
-          &#60;p> element:
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example09.jpg" alt="Example 9" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example09.jpg" alt="Example 9" />
-      </div>
-      <div class="example" id="CSSexample10">
-        <h2>10. CSS Margin</h2>
-        <p>
-          The CSS margin properties are used to create space around elements,
-          outside of any defined borders. <br />With CSS, you have full control
-          over the margins. There are properties for setting the margin for each
-          side of an element (top, right, bottom, and left).
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example10.jpg" alt="Example 10" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example10.jpg" alt="Example 10" />
-      </div>
-      <div class="example" id="CSSexample11">
-        <h2>11. CSS Padding</h2>
-        <p>
-          The CSS padding properties are used to generate space around an
-          element's content, inside of any defined borders. <br />With CSS, you
-          have full control over the padding. There are properties for setting
-          the padding for each side of an element (top, right, bottom, and
-          left).
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example11.jpg" alt="Example 11" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example11.jpg" alt="Example 11" />
-      </div>
-      <div class="example" id="CSSexample12">
-        <h2>12. CSS font-family Property</h2>
-        <p>
-          The font-family property should hold several font names as a
-          "fallback" system, to ensure maximum compatibility between
-          browsers/operating systems. <br />Start with the font you want, and
-          end with a generic family (to let the browser pick a similar font in
-          the generic family, if no other fonts are available).<br />
-          The font names should be separated with comma.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example12.jpg" alt="Example 12" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example12.jpg" alt="Example 12" />
-      </div>
-      <div class="example" id="CSSexample13">
-        <h2>13. CSS Link</h2>
-        <p>
-          Links can be styled with any CSS property (e.g. color, font-family,
-          background, etc.).<br />
-          In addition, links can be styled differently depending on what state
-          they are in.<br />
-
-          The four links states are:<br />
-
-          a:link - a normal, unvisited link<br />
-          a:visited - a link the user has visited<br />
-          a:hover - a link when the user mouses over it<br />
-          a:active - a link the moment it is clicked
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example13.jpg" alt="Example 13" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example13.jpg" alt="Example 13" />
-      </div>
-      <div class="example" id="CSSexample14">
-        <h2>14. CSS List</h2>
-        <p>
-          In HTML, there are two main types of lists:<br /><br />
-
-          unordered lists (&#60;ul>) - the list items are marked with bullets<br />
-          ordered lists (&#60;ol>) - the list items are marked with numbers or
-          letters<br /><br />
-
-          The CSS list properties allow you to:<br /><br />
-
-          Set different list item markers for ordered lists<br />
-          Set different list item markers for unordered lists<br />
-          Set an image as the list item marker<br />
-          Add background colors to lists and list items<br />
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example14.jpg" alt="Example 14" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example14.jpg" alt="Example 14" />
-      </div>
-      <div class="example" id="CSSexample15">
-        <h2>15. CSS The position Property</h2>
-        <p>
-          The position property specifies the type of positioning method used
-          for an element. There are five different position values:
-        </p>
-        <br />
+      </section>
+      <section id="skills" class="hidden">
+        <h2>Skills</h2>
         <ul>
-          <li>static</li>
-          <li>relative</li>
-          <li>fixed</li>
-          <li>absolute</li>
-          <li>sticky</li>
+          <li>Computer Literate, MS Office, and Computer Troubleshooting.</li>
+          <li>Basic Adobe Photoshop, HTML, and CSS.</li>
+          <li>Flexible, hardworking, and high sense of responsibility.</li>
+          <li>Time Management.</li>
+        </ul>
+      </section>
+      <section id="projects" class="hidden">
+        <h2>Projects</h2>
+        <ul>
+          <li class="project hidden">
+            <h3>Project Login Dashboard ( Nov(2022)-Ongoing )</h3>
+            <br /><a target="_blank" href="/Project1/picture1.jpg"
+              ><img
+                class="pimage"
+                src="/Project1/picture1.jpg"
+                alt="background" /></a
+            ><br />
+            <p>
+              Upon visiting the website, users will typically be prompted to
+              either log in or create a new account. To create an account, users
+              will need to provide some personal information, such as their name
+              and email address, and create a username and password. Once the
+              account is created, users can log in using their username and
+              password.<br /><br />
+
+              Once logged in, users will typically be directed to their
+              dashboard, which is a personalized interface that allows them to
+              access and manage their account and any associated features or
+              content. The dashboard may contain links to various pages or
+              resources within the website, as well as options for managing
+              their account settings and preferences.<br /><br />
+
+              Some examples of websites that have login and dashboard accounts
+              include social media platforms, online forums, and online
+              marketplaces. These types of websites often allow users to create
+              and manage profiles, post and share content, and interact with
+              other users. Some may also allow users to purchase products or
+              services, track their order history, or manage their account and
+              payment information.
+            </p>
+          </li>
+          <br /><br />
+          <li class="project hidden">
+            <h3>HTML and CSS Exercise Website.</h3>
+            <br /><a target="_blank" href="/Project2/picture1.jpg"
+              ><img
+                class="pimage"
+                src="/Project2/picture1.jpg"
+                alt="Website" /></a
+            ><br />
+          </li>
+          <br /><br />
+          <li class="project hidden">
+            <h3>Activity Completed in Java Programming</h3>
+          </li>
+        </ul>
+      </section>
+      <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <ul>
+          <li>
+            Email:
+            <a target="_blank" href="#nolang@ssct.edu.ph">nolang@ssct.edu.ph</a>
+          </li>
+          <li>Phone: (+63) 9776083596</li>
         </ul>
         <br />
-        <p>
-          Elements are then positioned using the top, bottom, left, and right
-          properties. However, these properties will not work unless the
-          position property is set first. They also work differently depending
-          on the position value.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example15.jpg" alt="Example 15" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example15.jpg" alt="Example 15" />
-      </div>
-      <div class="example" id="CSSexample16">
-        <h2>16. CSS Navigation Bar</h2>
-        <p>
-          Having easy-to-use navigation is important for any web site.<br />
-          With CSS you can transform boring HTML menus into good-looking
-          navigation bars.<br />
-          A navigation bar needs standard HTML as a base.
-          <br />
-          In our examples we will build the navigation bar from a standard HTML
-          list.<br />
-
-          A navigation bar is basically a list of links, so using the &#60;ul>
-          and &#60;li> elements makes perfect sense:
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example16.jpg" alt="Example 16" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example16.jpg" alt="Example 16" />
-      </div>
-      <div class="example" id="CSSexample17">
-        <h2>17. CSS Dropdown Menu</h2>
-        <p>
-          HTML - Use any element to open the dropdown content, e.g. a
-          &#60;span>, or a &#60;button> element. <br />Use a container element
-          (like &#60;div>) to create the dropdown content and add whatever you
-          want inside of it.<br />
-          Wrap a &#60;div> element around the elements to position the dropdown
-          content correctly with CSS. <br />CSS - The .dropdown class uses
-          position:relative, which is needed when we want the dropdown content
-          to be placed right below the dropdown button (using
-          position:absolute).
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example17.jpg" alt="Example 17" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example17.jpg" alt="Example 17" />
-      </div>
-      <div class="example" id="CSSexample18">
-        <h2>18. CSS Image Gallery</h2>
-        <p>CSS can be used to create an image gallery.<br /></p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example18.jpg" alt="Example 18" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example18.jpg" alt="Example 18" />
-      </div>
-      <div class="example" id="CSSexample19">
-        <h2>19. Web Layout</h2>
-        <p>
-          A website is often divided into headers, menus, content and a footer.
-          <br />
-          There are tons of different layout designs to choose from. However,
-          the structure below, is one of the most common, and we will take a
-          closer look at it in this tutorial.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example19.jpg" alt="Example 19" />
-        <br /><strong>HTML DISPLAY</strong><br />
-        <img src="css/output/example19.jpg" alt="Example 19" />
-      </div>
-      <div class="example" id="CSSexample20">
-        <h2>20. CSS Animation</h2>
-        <p>
-          An animation lets an element gradually change from one style to
-          another. <br />You can change as many CSS properties you want, as many
-          times as you want. <br />To use CSS animation, you must first specify
-          some keyframes for the animation. <br />Keyframes hold what styles the
-          element will have at certain times.<br /><br />
-        </p>
-        <h3>The @keyframes Rule</h3>
-        <br />
-        <p>
-          When you specify CSS styles inside the @keyframes rule, the animation
-          will gradually change from the current style to the new style at
-          certain times.<br />
-          To get an animation to work, you must bind the animation to an
-          element.
-        </p>
-        <br /><strong>HTML CODE</strong><br />
-        <img src="css/input/example20.jpg" alt="Example 20" />
-        <br /><br /><strong>HTML DISPLAY</strong><br />
-        <div class="animate">
-          <div class="box"></div>
+        <h2>You can reach me through Social Media right here!</h2>
+        <div class="logos">
+          <div class="logo hidden">
+            <a target="_blank" href="https://www.facebook.com/tokitamo"
+              ><img src="/icon/facebook.png" alt="Facebook"
+            /></a>
+          </div>
+          <div class="logo hidden">
+            <a target="_blank" href="https://www.instagram.com/cmine20"
+              ><img src="/icon/instagram.png" alt="Instagram"
+            /></a>
+          </div>
+          <div class="logo hidden">
+            <a target="_blank" href="https://twitter.com/cmine20"
+              ><img src="/icon/twitter.png" alt="Twitter"
+            /></a>
+          </div>
+          <div class="logo hidden">
+            <a target="_blank" href="https://github.com/cmine20"
+              ><img class="github" src="/icon/github.png" alt="Github"
+            /></a>
+          </div>
+          <div class="logo hidden">
+            <a
+              target="_blank"
+              href="https://www.sololearn.com/profile/2508058/?ref=app&fbclid=IwAR2BS2Fb_PewPFUzFbw0hjSTmC9l6xmXo5e4VOrBuqIa2o6RERcScAoicUU"
+              ><img class="sololearn" src="/icon/sololearn.png" alt="SoloLearn"
+            /></a>
+          </div>
         </div>
-      </div>
-      <!--BSCS-1A Website & Layout.-->
-      </div>
-    </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2022 (Olang Portfolio)</p>
+    </footer>
   </body>
 </html>
