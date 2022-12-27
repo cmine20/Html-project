@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+.navEffect {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.navEffect svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 350px;
+}
+
+.navEffect .shape-fill {
+  fill: #d3d3d3;
+}
+
+.red {
+  background: #dd3f31;
+}
+header {
+  background-color: lightblue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 2em;
+}
+
+nav {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  float: left;
+}
+#skills ul li {
+  padding-top: 20px;
+}
+section {
+  display: grid;
+  align-content: center;
+  width: 50%;
+  padding: 20px;
+  padding-left: 5%;
+  min-height: 100vh;
+}
+
+section h2 {
+  margin: 0;
+  color: lightblue;
+  font-size: 1.5em;
+}
+
+footer {
+  background-color: lightgrey;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: black;
+  font-size: 1.2em;
+}
+
+.pimage {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.pimage:hover {
+  border: 1px solid #777;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.logos {
+  display: flex;
+  margin: 5%;
+}
+.logo {
+  margin-left: 5%;
+}
+.logo:nth-child(2) {
+  transition-delay: 300ms;
+}
+.logo:nth-child(3) {
+  transition-delay: 600ms;
+}
+.logo:nth-child(4) {
+  transition-delay: 900ms;
+}
+.logo:nth-child(5) {
+  transition-delay: 1200ms;
+}
+@media (max-width: 1000px) {
+  section {
+    width: 100%;
+  }
+  main {
+    margin-right: 10%;
+  }
+}
