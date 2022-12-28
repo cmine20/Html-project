@@ -268,7 +268,7 @@ footer p {
 .logo {
   margin-left: 5%;
 }
-.logo:hover {
+.logo img:hover {
   margin-top: -15px;
   transition-delay: 0ms;
 }
