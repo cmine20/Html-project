@@ -66,6 +66,34 @@ body {
   height: 300px;
   object-fit: cover;
   margin: 0 20px;
+  z-index: 1;
+}
+.proborder {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proborder:after {
+  content: "";
+  background-image: conic-gradient(#ff0052 20deg, transparent 120deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 header {
@@ -81,6 +109,17 @@ header h1 {
   margin: 0;
   color: white;
   font-size: 2em;
+}
+.intro-text h1 span {
+  animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate {
+  from {
+    text-shadow: 0 0 20px goldenrod;
+  }
+  to {
+    text-shadow: 0 0 30px goldenrod, 0 0 10px goldenrod;
+  }
 }
 
 nav {
@@ -185,7 +224,7 @@ section h2 {
 }
 
 footer {
-  background-color: lightgrey;
+  background-color: goldenrod;
   justify-content: center;
   align-items: center;
   height: 50px;
