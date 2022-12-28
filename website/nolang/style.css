@@ -268,6 +268,10 @@ footer p {
 .logo {
   margin-left: 5%;
 }
+.logo:hover {
+  margin-top: -15px;
+  transition-delay: 0ms;
+}
 .logo:nth-child(2) {
   transition-delay: 300ms;
 }
@@ -280,6 +284,7 @@ footer p {
 .logo:nth-child(5) {
   transition-delay: 1200ms;
 }
+
 @media (max-width: 1000px) {
   section {
     width: 100%;
