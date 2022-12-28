@@ -87,14 +87,13 @@ nav {
   background-color: lightgrey;
   display: flex;
   justify-content: center;
-  height: 100px;
-  padding-bottom: 20px;
+  height: 3em;
+  padding-bottom: 2em;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
 }
 
@@ -118,15 +117,11 @@ nav ul li {
   transition: 0.5s;
   margin: 1em;
 }
-
-nav li {
-  margin: 0 10px;
-}
 nav ul li span {
   position: absolute;
   width: 25%;
   height: 100%;
-  background-color: var(--c);
+  background-color: goldenrod;
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 25%);
@@ -258,9 +253,6 @@ footer p {
     text-decoration: none;
     color: black;
     font-size: 2.2em;
-  }
-  nav li {
-    padding-bottom: 50%;
   }
   .navEffect svg {
     height: 600px;
