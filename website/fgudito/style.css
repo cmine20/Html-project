@@ -86,3 +86,7 @@ section h2 {
 section h2:hover {
   background-color: rgb(160, 211, 172);
 }
+.social img {
+  height: 10%;
+  width: 10%;
+}
