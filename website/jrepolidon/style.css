@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+section {
+  margin: 1%;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+  height: 80vh;
+}
+#profile {
+  margin-left: 28px;
+  width: 20.5%;
+}
+#aboutme {
+  width: 75%;
+}
+#aboutme .paragraph {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#aboutme p {
+  flex-wrap: wrap;
+  text-align: center;
+  width: 80%;
+  font-size: 25px;
+}
+#aboutme h2 {
+  display: flex;
+  justify-content: center;
+}
+.animate {
+  border: 10px solid lightblue;
+  width: auto;
+  height: 70%;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+.animate img {
+  position: absolute;
+  height: 100%;
+  width: inherit;
+  min-width: 70%;
+  max-width: 70%;
+}
+.background {
+  filter: blur(10px);
+}
+
+.me {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.me h2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.5em;
+}
+.me span {
+  display: block;
+  margin-left: 45%;
+}
+.pictures {
+  padding: 1% 0 0 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pictures img {
+  width: inherit;
+  max-width: 15%;
+  border: 5px solid #0e86d4;
+  border-radius: 50px;
+  margin: 5px;
+}
+#contactme {
+  display: grid;
+  justify-content: center;
+}
+#contactme span {
+  font-size: 1.2em;
+}
+footer {
+  display: grid;
+  justify-content: center;
+  background-color: lightblue;
+}
+.social,
+.copy {
+  text-align: center;
+  font-size: 10px;
+}
+.social img {
+  width: 50px;
+}
