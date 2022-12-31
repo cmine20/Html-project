@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/profile.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+
+    <main>
+      <section class="profile">
+        <img
+          src="images/profilebackground.png"
+          alt="picture1"
+          class="background"
+        />
+        <img
+          src="images/noprofilebackground.png"
+          alt="picture1"
+          class="profiles"
+        />
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello ,my name is <span>Felipe JR. Gudito</span> and I am from the
+          Philippines. I am the youngest son of Mr. Felipe Gudito Sr. & Mrs.
+          Jovita Gudito and I'm currently a first year student at Surigao Del
+          Norte State University taking a course of Bachelor of Science in
+          Computer Science and hopefully I achieve my journey to became a
+          software Engineer with this path I've taken now and do well in my
+          studies.
+        </p>
+        <h2>My Educational Bacground</h2>
+        <h3>Primary</h3>
+        <p>
+          In the year 2015-2016,I Graduated my primary education at San Pablo
+          Elementary School,Sison,Surigao Del Norte ,Philippines. and received a
+          diploma and some awards.I was greatful to be part of SPES my alma
+          matter for gaining a knowledge and skills during my time there.
+        </p>
+        <h3>Secondary</h3>
+        <p>
+          I attended my secondary education at Toledo S.Pantilo Sr.Memorial NHS
+          and finished my junior highschool there in the year 2019-2020. After
+          that i was transferred into Matin-Ao NHS to continued my 2 years
+          program of studying there the senior highschool and graduated in the
+          year 2021-2022.
+        </p>
+        <h3>Tertiary</h3>
+        <p>
+          I am now currently studying at Surigao Del Norte State
+          University,where i am now a BSCS student.Its an oportunity to me to
+          have this course to help me to gain more skills and knowledge in the
+          field of Computer and technology with this i am excited to achieved as
+          i work towards my degree in the near future.
+        </p>
+      </section>
+      <section class="gallery">
+        <a target="_blank" href="images/pic1.jpg">
+          <img src="images/pic1.jpg" alt="picture1"
+        /></a>
+        <a target="_blank" href="images/pic2.jpg">
+          <img src="images/pic2.jpg" alt="picture1"
+        /></a>
+        <a target="_blank" href="images/pic3.jpg">
+          <img src="images/pic3.jpg" alt="picture1"
+        /></a>
+        <a target="_blank" href="images/pic4.jpg">
+          <img src="images/pic4.jpg" alt="picture1"
+        /></a>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/send-message" method="post">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="5" cols="50"></textarea
+          ><br /><br />
+          <input type="submit" value="Send Message" />
+        </form>
+        <h2>Social Media</h2>
+        <div class="social">
+          <a target="_blank" href="https://www.facebook.com/fel.quino"
+            ><img src="facebook.png" alt="facebook"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2022</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(180, 96, 172);
+  padding: 10px;
+  opacity: 0.5;
+}
+header h1 {
+  display: grid;
+  justify-content: center;
+}
+
+main {
+  border-radius: 50px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  float: left;
+  height: 100%;
+  background-color: rgb(78, 70, 77);
+  overflow: hidden;
+}
+.profile img {
+  height: 80%;
+  position: absolute;
+  left: 45%;
+  bottom: 100px;
+  transform: translateX(-100%);
+  transition: bottom 3s, left 3s;
+}
+.profile .profiles {
+  height: 83%;
+  bottom: 50px;
+}
+
+.profile:hover .background {
+  bottom: 20px;
+}
+.profile:hover .profiles {
+  left: 50%;
+}
+
+section {
+  border-radius: 50px;
+  margin: 10px;
+  z-index: 1;
+  display: grid;
+  align-content: center;
+  width: 46.5%;
+  padding: 20px;
+  min-height: 80vh;
+  border: 1px solid greenyellow;
+}
+
+footer {
+  background-color: rgb(180, 96, 172);
+  text-align: center;
+  padding: 20px;
+  opacity: 0.8;
+}
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  width: 95%;
+}
+
+input[type="submit"] {
+  background-color: #00b8d4;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0082c8;
+}
+
+section h2 {
+  text-align: center;
+  padding: 5px;
+  border-radius: 40px;
+  border: 2px solid rgb(47, 193, 81);
+  cursor: pointer;
+}
+section h2:hover {
+  background-color: rgb(160, 211, 172);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  float: left;
+  height: 100%;
+}
+.gallery img {
+  border: 2px solid rgb(47, 193, 81);
+  border-radius: 50px;
+  margin: 5px;
+  width: 418px;
+  height: 520px;
+}
+
+@media (max-width: 1079px) {
+  section {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .profile img {
+    height: 70%;
+    position: absolute;
+    left: 90%;
+    bottom: 100px;
+    transform: translateX(-100%);
+    transition: bottom 3s, left 3s;
+  }
+  .profile:hover .background {
+    bottom: 180px;
+  }
+  .profile:hover .profiles {
+    left: 80%;
+  }
+  .profile .profiles {
+    height: 80%;
+    bottom: 100px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .profile .profiles {
+    height: 80%;
+    bottom: 100px;
+    transform: translateX(-80%);
+  }
+  .profile:hover .profiles {
+    left: 70%;
+  }
+  .profile .profiles {
+    left: 580px;
+  }
+  .profile .background {
+    left: 650px;
+    height: 70%;
+    bottom: 100px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.social {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social img {
+  height: 80px;
+}
