@@ -169,6 +169,30 @@ section h2:hover {
     height: 100%;
   }
 }
+@media (max-width: 600px) {
+  .profile .background,
+  .profile .profiles {
+    height: 80%;
+    bottom: 100px;
+    transform: translateX(-100%);
+  }
+  .profile:hover .profiles {
+    left: 90%;
+  }
+  .profile .profiles {
+    left: 580px;
+  }
+  .profile .background {
+    left: 550px;
+    width: 500px;
+    height: 70%;
+    bottom: 100px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media (max-width: 480px) {
   main {
     border-radius: 50px;
