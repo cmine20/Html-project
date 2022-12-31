@@ -320,16 +320,13 @@ footer p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: goldenrod;
   z-index: 9999;
-  text-align: center;
+  opacity: 0.9;
 }
-#loading-screen p {
-  height: 80vh;
+#loading-screen h2 {
+  position: absolute;
   display: grid;
-  color: black;
-  font-size: 5em;
-}
-#loading-screen p span {
-  text-transform: uppercase;
+  justify-content: center;
+  top: 0;
+  left: 45%;
 }
