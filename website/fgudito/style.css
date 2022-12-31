@@ -5,13 +5,15 @@ body {
 }
 
 header {
+  display: flex;
   background-color: rgb(180, 96, 172);
   padding: 10px;
-  opacity: 0.5;
+  opacity: 1;
 }
-header h1 {
+h1 {
   display: grid;
   justify-content: center;
+  color: black;
 }
 
 main {
@@ -34,8 +36,8 @@ main {
   transition: bottom 3s, left 3s;
 }
 .profile .profiles {
-  height: 83%;
-  bottom: 50px;
+  height: 80%;
+  bottom: 72px;
 }
 
 .profile:hover .background {
@@ -53,14 +55,14 @@ section {
   align-content: center;
   width: 46.5%;
   padding: 20px;
-  min-height: 80vh;
+  min-height: 70vh;
   border: 1px solid greenyellow;
 }
 
 footer {
   background-color: rgb(180, 96, 172);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   opacity: 0.8;
 }
 label {
@@ -145,11 +147,7 @@ section h2:hover {
     height: 100%;
   }
 }
-@media (max-width: 700px) {
-section {
-    width: 100%;
-    min-height: 70vh;
-  }
+@media (max-width: 720px) {
   .profile .profiles {
     height: 80%;
     bottom: 100px;
@@ -169,6 +167,49 @@ section {
   .gallery img {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    border-radius: 50px;
+    margin: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: rgb(78, 70, 77);
+    overflow: hidden;
+  }
+  .section {
+    width: 100%;
+    min-height: 70vh;
+    margin-bottom: 10px;
+  }
+  .profile:hover .profiles {
+    left: 110%;
+  }
+  .profile:hover .background {
+    bottom: 300px;
+  }
+  .profile .background {
+    left: 390px;
+    height: 70%;
+    width: 40%;
+  }
+  .profile .background,
+  .profile .profiles {
+    height: 500px;
+    width: 300px;
+    bottom: 200px;
+    transform: translateX(-140%);
+    left: 450px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+  footer p {
+    margin-bottom: 0;
   }
 }
 .social {
