@@ -1,0 +1,478 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.home {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/BG.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.line {
+	border-left: 30px solid burlywood;
+	height: 100%;
+	position: absolute;
+	left: 6.5%;
+}
+
+#imagePro {
+	padding: 2%;
+	float: left;
+	width: 150px;
+	border-radius: 100%;
+	position: relative;
+}
+
+nav {
+	padding-top: 5%;
+	padding-left: 6%;
+}
+
+.name {
+	color: white;
+	font-size: 50px;
+	font-family: sans-serif;
+	margin-bottom: 3px;
+}
+
+ .intro {
+	margin-bottom: 15px;
+	font-family: sans-serif;
+	color: white;
+}
+
+.pColor {
+	color: red;
+	font-weight: bold;
+}
+
+.pColor2 {
+	color: blue;
+	font-weight: bold;
+}
+
+#hire-me-link {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+	position: relative;
+	display: inline-block;
+}
+
+#hire-me-link::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.4s;
+}
+
+#hire-me-link:hover:after {
+	width: 100%;
+}
+
+.motto{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin: 150px 35.9%;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.me {
+	font-size: 20px;
+	font-family: monospace;
+}
+
+.down-nav-links {
+	margin-top: 33%;
+	flex: 1;
+}
+
+.down-nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.down-nav-links ul li a {
+	color: white;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+.down-nav-links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.4s;
+}
+
+.down-nav-links ul li:hover:after {
+	width: 100%;
+}
+
+@media(max-width: 1000px) {
+	.down-nav-links {
+		margin-top: 120%;
+	}
+}
+
+@media(max-width: 700px) {
+
+	nav {
+		padding-top: 15%;
+	}
+
+	.line {
+		margin-left: 11px;
+	}
+
+	#imagePro {
+		margin-top: 9%;
+		width: 100px;
+	}
+
+	.motto{
+		margin-left: 28%;
+	    font-size: 15px;
+	}
+
+	.me {
+		font-size: 10px;
+	}
+
+	.name {
+		font-size: 25px;
+	}
+
+	#hire-me-link {
+		font-size: 10px;
+	}
+
+	.top-nav-links .intro {
+		font-size: 9px;
+	}
+
+	.down-nav-links {
+		margin-top: 120%;
+	}
+
+	.down-nav-links ul li {
+		font-size: 10px;
+	}
+
+
+}
+
+/*----- about ------*/
+
+.about {
+	min-height: 100vh;
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+}
+
+.section {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.section h1 {
+	color: white;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+h3 {
+	color: white;
+}
+
+
+
+.text {
+	color: #777;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 15px;
+	padding: 10px;
+}
+
+.my-self {
+	margin-bottom: 5%;
+}
+
+.row {
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.edu-col {
+	flex-basis: 20%;
+	border-radius: 10px;
+	border: 2px solid red;
+	margin-bottom: 5%;
+	padding: 20px;
+	transition: 0.4s;
+}
+
+.section h6 {
+	color: #777;
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.edu-col:hover {
+	box-shadow: 0 0 20px 0px red;
+}
+
+.section .btn {
+	color: white;
+	padding: 13px 15px;
+	background: transparent;
+	border-radius: 10px;
+	border: 2px solid white;
+	transition: 1s;
+}
+
+.section .btn:hover {
+	background-color: white;
+	color: black;
+}
+
+@media(max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+
+	.btn {
+		margin-bottom: 15px;
+	}
+}
+
+/*------------ Portfolio ----------------*/
+
+.portfolio {
+	min-height: 100vh;
+	width: 100%;
+	background-color: floralwhite;
+}
+
+.section1 {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.section1 h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.section1 h6 {
+	margin-top: 10px;
+	color: #777;
+}
+
+
+.profile-col {
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.profile-col img {
+	width: 100%;
+	display: block;
+}
+
+.layer {
+	background: rgba(0, 0, 0, 0.9);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.4s;
+}
+
+.layer:hover {
+	background: transparent;
+}
+
+.layer h3 {
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 30vh;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.layer:hover h3 {
+	bottom: 0;
+	opacity: 0;
+}
+
+.portfolio .btn {
+	color: black;
+	margin-bottom: 30px;
+	padding: 13px 15px;
+	background: transparent;
+	border-radius: 10px;
+	border: 2px solid black;
+	transition: 1s;
+}
+
+.portfolio .btn:hover {
+	background-color: black;
+	color: white;
+}
+
+/*---------------- services ------------*/
+
+.services {
+	min-height: 100vh;
+	width: 100%;
+}
+
+.section2 {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.serv-col {
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.serv-col img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.section2 h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.section2 h6 {
+	margin-top: 10px;
+	color: #777;
+}
+
+.text1 {
+	color: #777;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	padding: 10px;
+	text-align: justify;
+}
+
+.services .btn {
+	color: black;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 13px 15px;
+	background: transparent;
+	border-radius: 10px;
+	border: 2px solid black;
+	transition: 1s;
+}
+
+.services .btn:hover {
+	background-color: orangered;
+	border: 2px solid orangered;
+	color: white;
+}
+
+/*------------ footer -------------*/
+
+footer {
+	min-height: 40vh;
+	width: 100%;
+	background-color: #777;
+}
+
+.foot {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+h4 {
+	font-size: 15px;
+	font-weight: 600;
+	color: lightgray;
+}
+
+.fa-brands {
+	font-size: 20px;
+	margin: 20px 5px;
+	color: lightgray;
+	transition: 0.4s;
+}
+
+.fa-brands:hover {
+	color: darkslategray;
+}
+
+.foot p {
+	font-size: 12px;
+	font-weight: 600;
+	color: lightgray;
+	display: inline-block;
+}
+
+footer h6 {
+	margin-top: 15px;
+	font-size: 12px;
+	font-weight: 600;
+	color: lightgray;
+}
+
+footer h6 a {
+	text-decoration: none;
+	color: lightgray;
+	transition: 0.4s;
+}
+
+footer h6 a:hover {
+	color: darkslategray;
+}
+
+.foot p {
+	margin-bottom: 10px;
+}
