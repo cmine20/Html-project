@@ -146,6 +146,10 @@ section h2:hover {
   }
 }
 @media (max-width: 700px) {
+section {
+    width: 100%;
+    min-height: 70vh;
+  }
   .profile .profiles {
     height: 80%;
     bottom: 100px;
