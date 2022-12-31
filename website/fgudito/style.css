@@ -9,10 +9,10 @@ header {
   background-color: rgb(180, 96, 172);
   padding: 10px;
   opacity: 1;
-}
-h1 {
   display: grid;
   justify-content: center;
+}
+h1 {
   color: black;
 }
 
@@ -200,8 +200,8 @@ section h2:hover {
   .profile .profiles {
     height: 500px;
     width: 300px;
-    bottom: 200px;
-    transform: translateX(-140%);
+    bottom: 120px;
+    transform: translateX(-130%);
     left: 450px;
   }
   .gallery img {
