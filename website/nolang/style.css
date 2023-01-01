@@ -83,7 +83,7 @@ p {
 }
 .proborder:after {
   content: "";
-  background-image: conic-gradient(#ff0052 20deg, transparent 120deg);
+  background-image: conic-gradient(goldenrod 20deg, transparent 120deg);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -344,18 +344,17 @@ div.desc {
   }
 }
 #loading-screen {
-  position: fixed;
   top: 0;
-  left: 0;
+  position: fixed;
   width: 100%;
   height: 100%;
   z-index: 9999;
   opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #loading-screen h2 {
   position: absolute;
-  display: grid;
-  justify-content: center;
   top: 0;
-  left: 45%;
 }
