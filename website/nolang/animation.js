@@ -3,7 +3,7 @@
   window.addEventListener("load", function () {
     setTimeout(function () {
       document.getElementById("loading-screen").style.display = "none";
-    }, 10000); // 10 seconds
+    }, 5000); // 5 seconds
   });
   var t = 0;
   var c = document.querySelector("canvas");     
