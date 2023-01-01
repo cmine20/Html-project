@@ -44,15 +44,3 @@
     draw();
   }
   run();
-  //Jumping Word Effects
-
-const letters = document.querySelectorAll("");
-
-let i = 0;
-setInterval(function() {
-  letters.forEach(function(letter) {
-    letter.style.top = Math.sin(i + letter.offsetLeft / 100) * 20 + "px";
-    letter.style.left = Math.cos(i + letter.offsetTop / 100) * 20 + "px";
-  });
-  i += 0.1;
-}, 50);
