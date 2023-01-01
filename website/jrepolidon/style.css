@@ -6,7 +6,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: lightblue;
+  background: linear-gradient(to left, #68bbe3, #0e86d4, #055c9d, #003060);
 }
 main {
   display: flex;
@@ -19,6 +19,9 @@ section {
   display: inline-block;
   vertical-align: top;
   height: 80vh;
+}
+section h2 {
+  text-transform: uppercase;
 }
 #profile {
   margin-left: 28px;
@@ -76,6 +79,9 @@ section {
   font-size: 2.5em;
 }
 .me span {
+  background: linear-gradient(to right, #68bbe3, #0e86d4, #055c9d, #003060);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: block;
   margin-left: 45%;
 }
@@ -102,7 +108,7 @@ section {
 footer {
   display: grid;
   justify-content: center;
-  background-color: lightblue;
+  background: linear-gradient(to left, #68bbe3, #0e86d4, #055c9d, #003060);
 }
 .social,
 .copy {
@@ -110,5 +116,8 @@ footer {
   font-size: 10px;
 }
 .social img {
+  background-color: black;
   width: 50px;
+  border-radius: 50px;
+  border: 2px solid #68bbe3;
 }
