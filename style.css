@@ -300,6 +300,7 @@ animate {
 #loading-screen h2 {
   position: absolute;
   top: 0;
+  color: white;
 }
 
 #loading-screen h2 {
