@@ -1,0 +1,85 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cooper Black;
+}
+
+header{
+      background-image:url(../2.jpg);
+      height: 15vh;
+      background-size: cover;
+      background-position: center;
+}
+  
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+   display: inline-block;
+
+}
+
+ul li a{
+     text-decoration: none;
+     color: #fff;
+     padding: 5px 20px;
+     border: 1px solid #fff;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+
+}
+.main{
+     max-width: 1200px;
+     margin: auto;
+}
+
+.block {
+  float: top;
+  position: relative;
+  margin: 300px auto 0;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(90% + 4px);
+  height: calc(90% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 10;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 10;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
