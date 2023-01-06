@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Portfolio</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff597b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #ff8e9e;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+    }
+
+    main {
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #f7a4a4;
+      height: 79vh;
+    }
+    .prof img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border: 10px solid #f9b5d0;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    section {
+      padding: 20px;
+    }
+    #about {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    #about p {
+      text-align: justify;
+    }
+    #about p span {
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+    #about .bio {
+      width: 50%;
+    }
+    #contact ul li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+    }
+    #contact img {
+      width: 32px;
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #f9b5d0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 90%;
+        margin: 0 auto;
+      }
+      #about .bio {
+        width: 100%;
+      }
+      body {
+        background-color: #f7a4a4;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Personal Portfolio</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h3>About Me</h3>
+        <div class="prof"><img src="prof.jpg" alt="Profile" /></div>
+        <div class="bio">
+          <p>
+            <br /><br />
+            Hi, I'm <span>Regine C. Mativo</span>, an ordinary person with an
+            extraordinary dream. I am 20 years old. I live in Magsaysay, Placer,
+            Surigao del Norte. I am a first-year college student with a Bachelor
+            of Science in Computer Science at Surigao del Norte State
+            University. I can cook and play billiards. My favorite color is
+            black, and I am Bisexual. I am easy to talk person, so you can talk
+            to me if you need someone to talk to. I believe in the saying, "It's
+            never too late to be what you might have been".
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <h3>Contact</h3>
+        <p>
+          You can contact me via email at
+          <a href="rmativo@ssct.edu.ph">rmativo@ssct.edu.ph</a>
+        </p>
+        <h3>Social media accounts</h3>
+        <ul>
+          <li>
+            <a href="https://facebook.com/Pahakjejed/"
+              ><img src="facebook.png" alt="facebook" />Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com/reginemativo/">
+              <img src="insta.png" alt="instagram" />Instagram</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Mativo 2022</p>
+    </footer>
+  </body>
+</html>
