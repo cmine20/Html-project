@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Villaran Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #bdc667;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+      }
+
+      header {
+        background-color: #544343;
+        padding: 20px 0;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .logo {
+        flex: 1;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+      }
+
+      main {
+        background-color: #bdc667;
+        padding: 20px 0;
+        margin: 0 auto;
+      }
+
+      section {
+        border-radius: 50px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      section h2 {
+        display: flex;
+        align-items: center;
+      }
+      #about .profile {
+        display: flex;
+        align-items: center;
+      }
+
+      #about img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      #about .bio h3 {
+        margin: 0;
+      }
+      #contact p {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      #contact p a {
+        margin: 0 5px 0 5px;
+      }
+      #contact ul li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+      #contact img {
+        width: 32px;
+        margin-right: 10px;
+      }
+      footer {
+        background-color: #56282d;
+        color: white;
+        padding: 20px 0;
+        display: grid;
+        justify-content: center;
+      }
+      .collage {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .collage img {
+        width: 500px;
+        height: 300px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        nav {
+          margin-bottom: 20px;
+        }
+        #about img {
+          margin-left: -10px;
+          margin-right: 10px;
+        }
+        main {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div class="container">
+          <h2>About</h2>
+          <div class="profile">
+            <img src="profile.jpg" alt="Profile picture" />
+            <div class="bio">
+              <h3>Anghila Goriding Villaran</h3>
+              <p>
+                I am a beginner in the Bachelor of Science in Computer Science
+                at
+                <span>Surigao del Norte State University</span>.<br /><br />
+
+                I have always had a passion for technology and problem-solving,
+                which is what led me to pursue a degree in computer science. I
+                am excited to learn new programming languages and technologies,
+                and to eventually use my skills to make a positive impact in the
+                world.<br /><br />
+                In my free time, I enjoy creating websites that revolve around
+                my hobbies of cooking, traveling, and playing sports. I have
+                always had a passion for technology and problem-solving, which
+                is why I decided to pursue a degree in computer science. I am
+                looking forward to making connections with my fellow classmates
+                and learning from my professors during my time in the Bachelor
+                of Science in Computer Science.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+          <div class="collage">
+            <img src="pic1.jpg" alt="pic1" />
+            <div class="desc"></div>
+            <img src="pic2.jpg" alt="pic2" />
+            <div class="desc"></div>
+            <img src="pic3.jpg" alt="pic3" />
+            <div class="desc"></div>
+            <img src="pic4.jpg" alt="pic4" />
+            <div class="desc"></div>
+            <img src="pic5.jpg" alt="pic5" />
+            <div class="desc"></div>
+            <img src="pic6.jpg" alt="pic6" />
+            <div class="desc"></div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Email
+            <a
+              href="avillaran@ssct.edu.ph
+            "
+            >
+              avillaran@ssct.edu.ph
+            </a>
+          </p>
+          <h2>Social Media</h2>
+          <ul>
+            <li>
+              <img src="fb.png" alt="Facebook" /><a
+                href="https://web.facebook.com/jiji.max.73"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Villaran</p>
+    </footer>
+  </body>
+</html>
