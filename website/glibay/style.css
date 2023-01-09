@@ -153,9 +153,6 @@ footer {
   #games img {
     width: 100%;
   }
-  #contact ul {
-    flex-direction: column;
-  }
   #contact li {
     margin: 10px 0;
   }
